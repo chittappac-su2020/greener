@@ -21,7 +21,6 @@ router.post('/', (req, res) => {
         }
         items.push(item);
     };
-    console.log(items);
     Order.create({
         user: user,
         orderTotal: orderTotal,
@@ -35,7 +34,6 @@ router.post('/', (req, res) => {
 router.get('/', (req, resu) => {
     Order.find({ user: req.query.id }, function (err, result) {
         if (err) throw err;
-        console.log(result);
         return (resu.send(result));
     })
 });
