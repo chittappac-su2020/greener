@@ -2,7 +2,7 @@
 
 ## Step1:
 
-Download the files from bitbucket
+Clone the repo
 
 ## Step2:
 
